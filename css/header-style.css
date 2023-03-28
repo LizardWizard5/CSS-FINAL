@@ -174,7 +174,6 @@ p{
     }
     .social p{
         font-size: 2.6vw;
-        width: 10vw;
     }
     #copyright{
         vertical-align: middle;
@@ -183,7 +182,9 @@ p{
     .feedback,.social{
         padding-left: 10%;
     }
-    
+    .footer{
+        grid-template-columns: 60%  10% 30%;
+    }
     .footer img{
         display: inline-grid;
         grid-column: 3;
