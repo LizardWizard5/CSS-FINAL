@@ -185,6 +185,7 @@ p{
     }
     #copyright{
         vertical-align: middle;
+        margin-left: 5%;
         font-size: 3vw;
     }
     .feedback,.social{
