@@ -172,7 +172,25 @@ p{
         margin-top: 2%;
         font-size: 3vw;
     }
-    .social{
+    .social p{
         font-size: 20vw;
+    }
+    #copyright{
+        margin-right: 5%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        vertical-align: middle;
+        font-size: 3vw;
+    }
+    .feedback,.social{
+        padding-left: 10%;
+    }
+    
+    .footer img{
+        display: inline-grid;
+        grid-column: 3;
+        grid-row: 2;
+        height: 15vw;
+        margin-right: 5vw;
     }
 }
