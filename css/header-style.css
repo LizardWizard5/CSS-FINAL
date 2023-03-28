@@ -153,7 +153,7 @@ p{
 }
 
 /*320px 480px 768px 900px 1024px 1200px*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 375px){
     /*header*/
     .image{
         padding-top: 2%;
