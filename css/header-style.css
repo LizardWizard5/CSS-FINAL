@@ -215,7 +215,7 @@ p{
     .menu a{
         display: inline-flex;
         flex-direction: row;
-        font-size: 6vw;
+        font-size: 5vw;
         transition: all 0.2s;
     }
     /*footer*/

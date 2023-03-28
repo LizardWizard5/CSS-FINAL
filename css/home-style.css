@@ -238,6 +238,24 @@ p{
         font-size: 2.7vw;
     }
 
+    #image p{
+        margin-left: 15vw;
+        font-size: 4vw;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 0.01vh;
+        height: 5vW;
+        width: 15vW;
+        border: 1px solid;
+
+    }
+
+    #image p:hover{
+        border: 1px dotted;
+        border-bottom: solid 1px;   
+        transition: all 0.25s ease-in-out; 
+    }
+
     #image img{
         height: 40vw;
     }
