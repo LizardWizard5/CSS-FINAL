@@ -1,0 +1,87 @@
+.beginning{
+    margin-left: 5vw;
+}
+.console-list{
+    margin-left: 5vw;
+}
+.console-list p{
+    font-size: 2vh;
+}
+/*Original console*/
+#og{
+grid-template-columns: 30% 20%;
+display: grid;
+}
+#og h1{
+    grid-row: 1;
+    grid-column: 1;
+}
+#og p{
+    grid-row: 2;
+    grid-column: 1;
+    margin-right: 5vw;
+}
+#og img{
+    grid-row: 2;
+    grid-column: 3;
+    height: 30vh;
+}
+/*Xbox 360*/
+#xbox{
+    display: grid;
+    }
+#xbox h1{
+        grid-row: 1;
+        grid-column: 3;
+    }
+#xbox p{
+        grid-row: 2;
+        grid-column: 3;
+        margin-right: 5vw;
+    }
+#xbox img{
+        grid-row: 2;
+        grid-column: 1;
+        height: 25vw;
+    }
+/*Xbox One*/
+#one{
+    display: grid;
+    }
+#one h1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+#one p{
+        grid-row: 2;
+        grid-column: 1;
+        margin-right: 5vw;
+    }
+#one img{
+        grid-row: 2;
+        grid-column: 3;
+        height: 20vw;
+    }
+
+/*Series X|S*/
+#series{
+    display: grid;
+    }
+#series h1{
+        grid-row: 1;
+        grid-column: 3;
+    }
+#series p{
+        grid-row: 2;
+        grid-column: 3;
+        margin-right: 5vw;
+    }
+#series img{
+        grid-row: 2;
+        grid-column: 1;
+        height: 25vw;
+        
+    }
+.console-list div>image{
+    height: 200vw;
+}
