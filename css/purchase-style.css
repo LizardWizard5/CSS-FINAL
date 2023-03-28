@@ -13,7 +13,7 @@ html{
     background-size: cover;
 }
 .images div{
-    background-color: rgba(34, 139, 34, 0.01);
+    background-color: rgba(34, 139, 34, 0.1);
     background-size: cover;
     backdrop-filter: blur(4px);
     display: grid;
@@ -34,16 +34,22 @@ html{
 .text{
     display: grid;
     grid-template-columns: 25%  40%;
+    font-size: 2vw;
+}
+.text p{
     font-size: 3vw;
+    height: 15%;
+    padding-left: 10%;
     
 }
-.text div>p:nth-child(2n+2){
+.text span p{
     background-color: #005600;
 }
 #col1{
     grid-column: 1;
     grid-row: 1;
 }
+
 #col2{
     border-left: 0.25vw dashed;
     border-color: #005600;
@@ -56,7 +62,7 @@ html{
 }
 #purchase{
     display: grid;
-    grid-template-columns: 25vw  39vw 0vw;
+    grid-template-columns: 25.5vw  39vw 0vw;
 }
 #purchase a:nth-child(1){
     grid-column: 2;
@@ -72,11 +78,11 @@ html{
     width: 14vW;
     background-color: rgba(244, 244, 244, 0.1);
     transition: all 0.25s;
-    font-size: 2vw;
+    font-size: 100%;
     text-align: center;
     
     border: 2px solid;
-
+    
 }
 #purchase a:hover{
 
@@ -89,3 +95,84 @@ html{
 
 }
 
+@media screen and (max-width: 320px){
+    .text{
+        grid-template-columns: 30%  40%;
+    }
+
+    .buyxbox h1{
+        font-size: 2vh;
+    }
+    .images img{
+        margin-bottom: 2vw;
+    }
+    .images img:nth-child(1){
+        margin-left: 10vw;
+        height: 40vw;
+    }
+    .images img:nth-child(2){
+        height: 40vw;
+    }
+    
+    .text p{
+        height: 6vh;
+        font-size: 15px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .text span p{
+        height: 6vh;
+        font-size: 15px;
+    }
+
+    #col2 p{
+        padding-left: 1vh;
+    }
+    #purchase{
+        grid-template-columns: 30vw  39vw 0vw;
+    }
+    #purchase a{
+        height: 6vW;
+        width: 22vW;
+        border: 1px solid;
+        font-size: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width : 480px){
+    .buyxbox h1{
+        font-size: 3vh;
+    }
+    .images img:nth-child(1){
+        margin-left: 10vw;
+        height: 40vw;
+    }
+    .images img:nth-child(2){
+        height: 40vw;
+    }
+    .text p{
+        height: 10vh;
+        font-size: 2vh;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .text span p{
+        height: 10vh;
+        font-size: 2vh;
+    }
+    #purchase a{
+        height: 5vW;
+        width: 20vW;
+        border: 2px solid;
+        font-size: 120%;
+    }
+}
+@media screen and (max-width : 768px){
+    #purchase a{
+
+        font-size: 75%;
+        margin-bottom: 2vh;
+    }
+}

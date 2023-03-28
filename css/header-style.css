@@ -169,7 +169,7 @@ p{
         flex-direction: row;
         font-size: 2vw;
         transition: all 0.2s;
-        margin-right: 2vw;
+        margin-right: 5vw;
     }
     .menu a:last-of-type{
         margin-right: 1vw;
@@ -178,10 +178,11 @@ p{
     .feedback h1{
         margin-top: 2%;
         font-size: 4vw;
+        margin-bottom: 2%;
     }
     .feedback p{
-        margin-top: 2%;
-        font-size: 3.5vw;
+        margin-top: 0%;
+        font-size: 12px;
     }
     .social a{
         font-size: 40vw;
@@ -264,6 +265,5 @@ p{
         vertical-align: middle;
         font-size: 2vw;
     }
-
 
 }
