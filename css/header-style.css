@@ -247,18 +247,18 @@ p{
 
     /*Footer*/
     .footer{
-        grid-template-columns: 50% 10%;
+        grid-template-columns: 70% 0%;
     }
 
     .feedback h1{
-        font-size:3vw;
+        font-size:2vh;
     }
     .feedback p{
-        font-size:2.5vw;
+        font-size:3vw;
     }
 
     .social p{
-        font-size: 2.5vw;
+        font-size: 2.63vw;
     }
     #copyright{
         vertical-align: middle;
