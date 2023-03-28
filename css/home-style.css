@@ -146,58 +146,31 @@ p{
 
 }
 
-@media screen and (max-width: 320px){
-    /*Hero image*/
-    .hero-image h1{
-        padding-left: 5%;
-        font-size: 6vw;
-        margin: 0%;
-    }
-
-    /*Why xbox section*/
-
+@media screen and (max-width : 768px){
     .description{
-        margin-top: 5vh;
-        padding-left: 5%;
-        height: 70vw;
-    }
-
-    .split{
-        display: grid;
-        grid-row: 2;
-        grid-column: 2;
-        grid-template-columns: 50% 20%;
-        column-gap: 5%;
-        height: 20vw;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
     }
     .description h1{
         font-size: 4vw;
     }
     .description p{
-        font-size: 3vw;
+        font-size: 2.4vw;
+    }
+    .split{
+        grid-template-columns: 50% 10%;
+        column-gap: 5%;
+        height: 20vw;
     }
 
-    #image img{
-        height: 35vw;
-    }
-
-    /*Gamepass section*/
+    /*Gamepass*/
     .gamepass-header div{
-        height: 70vw;
-    }
-    .gamepass-header div h1{
-        font-size: 7vw;
-    }
-    .gamepass-header div h2{
-        font-size: 4vw;
+        height: 55vw;
     }
     .gamepass-header div p{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
-    .gamepass-header div > a{
-        width: 20vw;
-        height: 3.5vw;
-    }
+    
 }
 
 @media screen and (max-width: 480px){
@@ -279,29 +252,58 @@ p{
         margin-bottom: 4px;
     }
 }
-@media screen and (min-width : 481px) and (max-width : 768px){
+
+
+@media screen and (max-width: 320px){
+    /*Hero image*/
+    .hero-image h1{
+        padding-left: 5%;
+        font-size: 6vw;
+        margin: 0%;
+    }
+
+    /*Why xbox section*/
+
     .description{
-        margin-top: 1vh;
-        margin-bottom: 3vh;
+        margin-top: 5vh;
+        padding-left: 5%;
+        height: 75vw;
     }
-    .description h1{
-        font-size: 4vw;
-    }
-    .description p{
-        font-size: 2.4vw;
-    }
+
     .split{
-        grid-template-columns: 50% 10%;
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        grid-template-columns: 50% 20%;
         column-gap: 5%;
         height: 20vw;
     }
+    .description h1{
+        font-size: 7vw;
+    }
+    .description p{
+        font-size: 3.3vw;
+    }
 
-    /*Gamepass*/
+    #image img{
+        height: 40vw;
+    }
+
+    /*Gamepass section*/
     .gamepass-header div{
-        height: 55vw;
+        height: 70vw;
+    }
+    .gamepass-header div h1{
+        font-size: 7vw;
+    }
+    .gamepass-header div h2{
+        font-size: 4vw;
     }
     .gamepass-header div p{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
-    
+    .gamepass-header div > a{
+        width: 20vw;
+        height: 3.5vw;
+    }
 }

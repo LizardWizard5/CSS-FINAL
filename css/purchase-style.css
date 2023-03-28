@@ -17,27 +17,31 @@ html{
     background-size: cover;
     backdrop-filter: blur(4px);
     display: grid;
+
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .images img:nth-child(1){
     grid-column: 2;
     grid-row: 1;
     height: 20vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 .images img:nth-child(2){
     grid-column: 3;
     grid-row: 1;
     height: 20vw;
+    margin-left: 12vw;
 }
 /*Setup text*/
 .text{
     display: grid;
     grid-template-columns: 25%  40%;
-    font-size: 2vw;
+    
 }
 .text p{
-    font-size: 3vw;
+    font-size: 2.8vw;
     height: 15%;
     padding-left: 10%;
     
@@ -51,8 +55,7 @@ html{
 }
 
 #col2{
-    border-left: 0.25vw dashed;
-    border-color: #005600;
+
     grid-column: 2;
     grid-row: 1;
 }
@@ -62,8 +65,10 @@ html{
 }
 #purchase{
     display: grid;
-    grid-template-columns: 25.5vw  39vw 0vw;
+    grid-template-columns: 26.5vw  39vw 0vw;
+    padding-top: 23%;
 }
+
 #purchase a:nth-child(1){
     grid-column: 2;
     grid-row: 1;
@@ -95,49 +100,25 @@ html{
 
 }
 
-@media screen and (max-width: 320px){
-    .text{
-        grid-template-columns: 30%  40%;
+@media screen and (max-width : 768px){
+
+    #purchase a{
+        margin-bottom: 2vh;
+        font-size: 2vw;
     }
 
-    .buyxbox h1{
-        font-size: 2vh;
-    }
-    .images img{
-        margin-bottom: 2vw;
+    .images div{
+        padding-bottom: 5%;
+        padding-top: 5%;
     }
     .images img:nth-child(1){
-        margin-left: 10vw;
+        margin-left: 15vw;
         height: 40vw;
     }
     .images img:nth-child(2){
         height: 40vw;
+        margin-left: 0vw;
     }
-    
-    .text p{
-        height: 6vh;
-        font-size: 15px;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    .text span p{
-        height: 6vh;
-        font-size: 15px;
-    }
-
-    #col2 p{
-        padding-left: 1vh;
-    }
-    #purchase{
-        grid-template-columns: 30vw  39vw 0vw;
-    }
-    #purchase a{
-        height: 6vW;
-        width: 22vW;
-        border: 1px solid;
-        font-size: 10px;
-    }
-    
 }
 
 
@@ -162,17 +143,59 @@ html{
         height: 10vh;
         font-size: 2vh;
     }
+    #purchase{
+        padding-top: 5%;
+        
+    }
     #purchase a{
+        font-size: 3vw;
         height: 5vW;
         width: 20vW;
-        border: 2px solid;
-        font-size: 120%;
     }
 }
-@media screen and (max-width : 768px){
-    #purchase a{
 
-        font-size: 75%;
-        margin-bottom: 2vh;
+
+@media screen and (max-width: 320px){
+    .text{
+        grid-template-columns: 30%  40%;
     }
+
+    .buyxbox h1{
+        font-size: 2vh;
+    }
+
+    .images img{
+        margin-bottom: 2vw;
+    }
+    .images img:nth-child(1){
+        margin-left: 10vw;
+        height: 40vw;
+    }
+    .images img:nth-child(2){
+        height: 40vw;
+    }
+
+    .text p{
+        height: 6vh;
+        font-size: 15px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .text span p{
+        height: 6vh;
+        font-size: 15px;
+    }
+    
+
+    #col2 p{
+        padding-left: 1vh;
+    }
+    #purchase{
+        grid-template-columns: 30vw  39vw 0vw;
+        padding-top: 2%;
+        height: 7vW;
+        width: 27vW;
+        font-size: 2vw;
+    }
+
 }
