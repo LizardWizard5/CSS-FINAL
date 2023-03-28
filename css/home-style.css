@@ -247,7 +247,7 @@ p{
         height: 5vW;
         width: 15vW;
         border: 1px solid;
-
+        margin-bottom: 2px;
     }
 
     #image p:hover{
@@ -276,6 +276,7 @@ p{
     .gamepass-header div > a{
         width: 20vw;
         height: 3.5vw;
+        margin-bottom: 4px;
     }
 }
 @media screen and (min-width : 481px) and (max-width : 768px){
