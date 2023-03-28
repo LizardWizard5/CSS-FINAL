@@ -153,7 +153,7 @@ p{
 }
 
 /*320px 480px 768px 900px 1024px 1200px*/
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     /*header*/
     .image{
         padding-top: 2%;
@@ -231,9 +231,7 @@ p{
     .feedback,.social{
         padding-left: 10%;
     }
-    .footer{
-        grid-template-columns: 60%  10% 30%;
-    }
+   
     .footer img{
         display: inline-grid;
         grid-column: 3;
