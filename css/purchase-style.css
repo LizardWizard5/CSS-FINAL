@@ -46,9 +46,7 @@ html{
     padding-left: 10%;
     
 }
-.text span p{
-    background-color: #005600;
-}
+
 #col1{
     grid-column: 1;
     grid-row: 1;
