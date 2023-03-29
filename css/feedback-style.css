@@ -22,7 +22,6 @@
     border:2px solid;
     border-color: #f4f4f4;
     grid-template-columns: 50%  50%;
-    padding-left: 20%;
     grid-column: 2;
 }
 
@@ -30,12 +29,15 @@
     grid-column: 1;
     font-size: 2vw;
 }
+#help p,#help h1{
+    padding-right: 5%;
+}
 #outer-border p{
     font-size: 2vw;
     padding-left: 10%;
 }
 .main h2{
-    font-size: 3vw;
+    font-size: 2.8vw;
 }
 .table{
     display: flex;
@@ -49,23 +51,18 @@
 }
 
 #inner-border, #outer-border{
-    justify-content: center;
-    
     background-color: #355E3B;
 }
 #outer-border{
     border: 2px solid;
     color: #f4f4f4;
-    vertical-align: middle;
-    padding-bottom: 5%;
     width: 100%;
 }
 #inner-border{
     border: 2px solid;
     color: #f4f4f4;
-    
     padding: 5%;
-    border-radius: 3%;
+    border-radius: 8%;
     background-color: #228B22;
 }
 
@@ -75,7 +72,7 @@
 }
 .table [type=text]{
     font-size: 1vw;
-    width: 20vw;
+    width: 30vw;
     border: 0px solid;
     border-bottom: 2px solid;
     color: #f4f4f4; 
@@ -99,10 +96,10 @@
 }
 
 .table #platform{
-    width: 15.4vw;
+    width: 16.5vw;
 }
 .table [type=submit]{
-    width: 4.8vw;
+    width: 13.7vw;
 }
 #platform{
     border-radius: 0%;
@@ -137,69 +134,11 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width : 900px){
     .main{
         padding-left: 5%;
         height: 70vw;
-        grid-template-columns: 40% 60%;
-    }
-    #help p{
-        font-size: 3.2vw;
-    }
-
-
-    #inner-border .form{
-        padding: 0%;
-    }
-
-    #outer-border p{
-        font-size: 4vw;
-    }
-
-    #inner-border{
-        height: 40vw;
-        padding: 14%;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 5%;
-    }
-    .table #comment{
-        font-size: 2vw;
-        height: 30vw;
-        width: 45vw;
-    }
-    #platform, [type=submit]{
-        font-size: 10px;
-    }
-    .table #platform{
-        width: 30vw;
-    }
-    .table [type="submit"]{
-        width: 15.8vw;
-    }
-    
-    .table [type=text]{
-        font-size: 3.5vw;
-        width: 45vw;
-        border: 0px solid;
-        border-bottom: 2px solid;
-        color: #f4f4f4; 
-        background-color: rgba(34, 139, 34,0);
-        transition: all .25s;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-    .table{
-        padding-left: 0%;
-    }
-    
-}
-
-@media screen and (max-width : 768px){
-    .main{
-        padding-left: 5%;
-        height: 70vw;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
     }
     #help p{
         font-size: 3.2vw;
@@ -221,7 +160,69 @@
         padding: 14%;
         padding-left: 0%;
         padding-right: 0%;
-        padding-top: 5%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+    .table #comment{
+        font-size: 2vw;
+        height: 30vw;
+        width: 35vw;
+    }
+    #platform, [type=submit]{
+        font-size: 10px;
+    }
+    .table #platform{
+        width: 25vw;
+    }
+    .table [type="submit"]{
+        width: 10.5vw;
+    }
+    
+    .table [type=text]{
+        font-size: 3.5vw;
+        width: 35vw;
+        border: 0px solid;
+        border-bottom: 2px solid;
+        color: #f4f4f4; 
+        background-color: rgba(34, 139, 34,0);
+        transition: all .25s;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .table{
+        padding-left: 0%;
+    }
+}
+
+
+@media screen and (max-width : 768px){
+    .main{
+        padding-left: 5%;
+        height: 70vw;
+        grid-template-columns: 40% 60%;
+    }
+    #help p{
+        font-size: 3vw;
+    }
+    #help{
+        padding-right: 5%;
+    }
+
+    #inner-border .form{
+        padding: 0%;
+    }
+
+    #outer-border p{
+        font-size: 4vw;
+    }
+
+    #inner-border{
+        height: 40vw;
+        padding: 14%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 5%;
     }
     .table #comment{
         font-size: 2vw;
@@ -232,10 +233,12 @@
         font-size: 10px;
     }
     .table #platform{
+        font-size: 2vw;
         width: 29.8vw;
     }
     .table [type="submit"]{
         width: 15.8vw;
+        font-size: 2vw;
     }
     
     .table [type=text]{
@@ -251,6 +254,81 @@
     }
     .table{
         padding-left: 0%;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 480px){
+    .main{
+        padding-left: 5%;
+        height: 100vw;
+        grid-template-columns: 40% 60%;
+    }
+    #help p{
+        font-size: 3.8vw;
+    }
+
+
+    #inner-border .form{
+        padding: 0%;
+    }
+
+    #outer-border p{
+        font-size: 4vw;
+    }
+
+    #inner-border{
+        height: 50vw;
+        padding: 14%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 5%;
+    }
+    .table #comment{
+        font-size: 3vw;
+        height: 37vw;
+        width: 99%;
+    }
+    #platform, [type=submit]{
+        font-size: 10px;
+    }
+    .table #platform{
+        font-size: 3vw;
+        width: 29.8vw;
+    }
+    .table [type="submit"]{
+        width: 15.8vw;
+        font-size: 3vw;
+    }
+    
+    .table [type=text]{
+        font-size: 3.7vw;
+        width: 45vw;
+        border: 0px solid;
+        border-bottom: 2px solid;
+        color: #f4f4f4; 
+        background-color: rgba(34, 139, 34,0);
+        transition: all .25s;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .table{
+        padding-left: 0%;
+    }
+
+    .table [type=text]:hover{
+        border: 0px dashed;
+        border-bottom: 0px solid;
+        transition: all .25s;
+    }
+    .table [type=text]:focus{
+        border: 0px solid;
+        border-bottom: 0px solid;
+        transition: all .25s;
+        outline: none;
     }
     
 }

@@ -125,6 +125,9 @@ display: grid;
     #og img{
         height: 25vw;
     }
+    .beginning p{
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 320px){
