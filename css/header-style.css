@@ -77,10 +77,9 @@ p{
 }
 
 .feedback a{
-    border-bottom: 0.1vw solid;
-    border-left: 0 solid;
-    border-right: 0 solid;
-    border-top: 0 solid;
+    border-bottom: 0.25vw solid;
+
+    color: #f4f4f4;
     transition: all 0.25s ease-in-out;
 }
 .feedback a:hover{
@@ -89,6 +88,7 @@ p{
     border-top: 0.25vw dotted;
     border-bottom: 0.3vw solid;
     transition: all 0.25s ease-in-out;
+    margin-right: -0.25vw;
 }
 
 .social li,ul,a{

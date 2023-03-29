@@ -1,0 +1,196 @@
+/*Hero Image*/
+.text{
+    display: flex;
+    background-image: url("../images/xbox-remote-bg.png");
+    background-size: 4vh 4vh;
+    height: 20vw;
+}
+.text h1{
+    background-image: linear-gradient(360deg, rgba(34, 139, 34,0), rgba(34, 139, 34,1));
+    margin-top: 0%;
+    margin-bottom:0%;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 8vw;
+    width: 100%;
+    display: flex;
+}
+
+.main{
+    padding-left: 10%;
+    display: grid;
+    border:2px solid;
+    border-color: #f4f4f4;
+    grid-template-columns: 50%  50%;
+    padding-left: 20%;
+    grid-column: 2;
+}
+
+#help p{
+    grid-column: 1;
+    font-size: 2vw;
+}
+#outer-border p{
+    font-size: 2vw;
+    padding-left: 10%;
+}
+.main h2{
+    font-size: 3vw;
+}
+.table{
+    display: flex;
+}
+.form{
+    
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: fit-content;
+}
+
+#inner-border, #outer-border{
+    justify-content: center;
+    
+    background-color: #355E3B;
+}
+#outer-border{
+    border: 2px solid;
+    color: #f4f4f4;
+    vertical-align: middle;
+    padding-bottom: 5%;
+    width: 100%;
+}
+#inner-border{
+    border: 2px solid;
+    color: #f4f4f4;
+    
+    padding: 5%;
+    border-radius: 3%;
+    background-color: #228B22;
+}
+
+.table #comment{
+    resize: none;
+    height: 10vw;
+}
+.table [type=text]{
+    font-size: 1vw;
+    width: 20vw;
+    border: 0px solid;
+    border-bottom: 2px solid;
+    color: #f4f4f4; 
+    background-color: rgba(34, 139, 34,0);
+    transition: all .25s;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.table [type=text]:hover{
+    border: 2px dashed;
+    border-bottom: 2px solid;
+    color: #f4f4f4; 
+    transition: all .25s;
+}
+.table [type=text]:focus{
+    border: 2px solid;
+    border-bottom: 2px solid;
+    color: #f4f4f4; 
+    transition: all .25s;
+    outline: none;
+}
+
+.table #platform{
+    width: 15.4vw;
+}
+.table [type=submit]{
+    width: 4.8vw;
+}
+#platform{
+    border-radius: 0%;
+    background-color: rgba(34, 139, 34,0);
+    border: 0px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    color: #f4f4f4;
+    padding-top: 0px;
+    transition: all .25s;
+}
+#platform:hover{
+    border-left: 2px dashed;
+    border-bottom: 2px dashed;
+    transition: all .25s ease-in-out;
+}
+
+.table input{
+    border-radius: 0%;
+    background-color: rgba(34, 139, 34,0);
+    border: 0px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    color: #f4f4f4;
+    padding-top: 0px;
+    transition: all .25s ease-in-out;
+}
+.table input:hover{
+    border-right: 2px dashed;
+    border-bottom: 2px dashed;
+    transition: all .25s ease-in-out;
+}
+
+
+@media screen and (max-width: 480px){
+    .main{
+        padding-left: 5%;
+        height: 70vw;
+        grid-template-columns: 40% 60%;
+    }
+    #help p{
+        font-size: 3.2vw;
+    }
+
+
+    #inner-border .form{
+        padding: 0%;
+    }
+
+    #outer-border p{
+        font-size: 4vw;
+    }
+
+    #inner-border{
+        height: 40vw;
+        padding: 14%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 5%;
+    }
+    .table #comment{
+        font-size: 2vw;
+        height: 30vw;
+        width: 45vw;
+    }
+    #platform, [type=submit]{
+        font-size: 10px;
+    }
+    .table #platform{
+        width: 30vw;
+    }
+    .table [type="submit"]{
+        width: 15.8vw;
+    }
+    
+    .table [type=text]{
+        font-size: 3.5vw;
+        width: 45vw;
+        border: 0px solid;
+        border-bottom: 2px solid;
+        color: #f4f4f4; 
+        background-color: rgba(34, 139, 34,0);
+        transition: all .25s;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .table{
+        padding-left: 0%;
+    }
+    
+}
